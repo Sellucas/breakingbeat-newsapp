@@ -5,7 +5,7 @@ import "../../index.css"
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-red-700 top-0">
+    <div className="w-full bg-red-700 top-0 fixed">
       <div className="w-[1200px] h-16 m-auto flex direction-row justify-between font-bold items-center text-white">
         <div className="flex">
           <GiHamburgerMenu className="mr-2" />
