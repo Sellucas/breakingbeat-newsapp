@@ -3,7 +3,7 @@ import News from "./home/news/News";
 
 const Home = () => {
   return (
-    <div className="border-2 w-[1250px] h-fit m-auto mt-24 mb-20">
+    <div className=" w-[1250px] h-fit m-auto pt-24 mb-20">
       <News />
     </div>
   );

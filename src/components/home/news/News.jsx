@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import api from "../../../services/api";
 import Economy from "../economy/Economy";
+import Weather from "../weather/Weather";
 
 // URL api'top-headlines?country=pt&apiKey=b50bea4d22e043f7a84c7c1b0af10408'
 
@@ -25,13 +26,10 @@ const News = () => {
 
   return (
     <div className="flex">
-      <div className="flex justify-start flex-wrap w-4/5 bg-blue-500">
+      <div className="flex justify-start flex-wrap w-4/5">
         {news.map((post) => {
           return (
-            <div
-              key={post.publishedAt}
-              className="w-72 h-80 mr-[35px]"
-            >
+            <div key={post.publishedAt} className="w-72 h-80 mr-[35px]">
               <img
                 className="w-full h-[157px] object-cover"
                 src={post.urlToImage}
@@ -43,8 +41,8 @@ const News = () => {
           );
         })}
       </div>
-      <div className="bg-purple-600 flex justify-start w-1/5">
-        <Economy />
+      <div className="flex justify-start w-1/5">
+        <Weather />
       </div>
     </div>
   );
