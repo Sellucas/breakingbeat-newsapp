@@ -41,8 +41,9 @@ const News = () => {
           );
         })}
       </div>
-      <div className="flex justify-start w-1/5">
+      <div className="flex flex-col justify-start w-1/5">
         <Weather />
+        <Economy />
       </div>
     </div>
   );
