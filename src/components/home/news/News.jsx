@@ -25,18 +25,18 @@ const News = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex drop-shadow-lg">
       <div className="flex justify-start flex-wrap w-4/5">
         {news.map((post) => {
           return (
             <div key={post.publishedAt} className="w-72 h-80 mr-[35px]">
               <img
-                className="w-full h-[157px] object-cover"
+                className="w-full h-[157px] object-cover rounded-lg"
                 src={post.urlToImage}
                 alt={post.title}
               />
-              <strong>{post.author}</strong>
-              <h1>{post.title}</h1>
+              <p className="author-news text-red-600 mt-2">{post.author}</p>
+              <h1 className="title-news text-base font-bold">{post.title}</h1>
             </div>
           );
         })}
