@@ -5,8 +5,8 @@ import "../../index.css"
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-[#C4170C] top-0 fixed">
-      <div className="w-[1200px] h-16 m-auto flex direction-row justify-between font-bold items-center text-white">
+    <div className="w-full bg-[#C4170C] top-0 fixed z-10">
+      <nav className="lg:w-[1200px] sm:w-[900px] h-16 m-auto flex direction-row justify-between font-bold items-center text-white">
         <div className="flex">
           <GiHamburgerMenu className="mr-2" />
           <div className="flex direction-row items-center text-sm">MENU</div>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <AiOutlineSearch className="mr-2" />
           <div className="flex direction-row items-center text-sm">BUSCAR</div>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };

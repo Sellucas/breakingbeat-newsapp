@@ -25,8 +25,8 @@ const News = () => {
   }, []);
 
   return (
-    <div className="flex drop-shadow-lg">
-      <div className="flex justify-start flex-wrap w-4/5">
+    <div className="lg:flex w-fit">
+      <div className="flex justify-center flex-wrap w-4/5">
         {news.map((post) => {
           return (
             <div key={post.publishedAt} className="w-72 h-80 mr-[35px]">
@@ -41,8 +41,8 @@ const News = () => {
           );
         })}
       </div>
-      <div className="flex flex-col justify-start w-1/5">
-        <Weather />
+      <div className="w-1/5">
+        <Weather/>
         <Economy />
       </div>
     </div>

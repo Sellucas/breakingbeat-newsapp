@@ -85,7 +85,7 @@ const Weather = () => {
   };
 
   return (
-    <div className="bg-white border-2 h-96 w-full grid place-items-center">
+    <div className="bg-white border-2 h-96 w-full grid place-items-center mb-20 drop-shadow-lg">
       <div className="bg-white w-5/6 p-1 rounded-md">
         <div className="flex items-center justify-between">
           <input
