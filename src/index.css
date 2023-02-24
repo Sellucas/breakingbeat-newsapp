@@ -17,3 +17,19 @@
 .author-news {
   font-family: "Merriweather Sans", sans-serif;
 }
+
+.w-inherit {
+  width: inherit;
+  max-width: inherit;
+}
+
+.w-parent {
+  max-width: 250px;
+  width: 20%;
+}
+
+@media (max-width: 1439px) {
+  .c-hidden {
+    display: none;
+  }
+}

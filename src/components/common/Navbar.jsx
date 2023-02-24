@@ -5,16 +5,16 @@ import "../../index.css"
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-[#C4170C] top-0 fixed z-10">
-      <nav className="lg:w-[1200px] sm:w-[900px] h-16 m-auto flex direction-row justify-between font-bold items-center text-white">
+    <div className="min-w-full bg-[#C4170C] top-0 fixed z-10">
+      <nav className=" h-16 m-auto flex direction-row justify-around font-bold items-center text-white">
         <div className="flex">
           <GiHamburgerMenu className="mr-2" />
-          <div className="flex direction-row items-center text-sm">MENU</div>
+          <div className="flex direction-row items-center text-xs">MENU</div>
         </div>
         <div className="logo text-3xl"><a href="/">BB</a></div>
         <div className="flex">
           <AiOutlineSearch className="mr-2" />
-          <div className="flex direction-row items-center text-sm">BUSCAR</div>
+          <div className="flex direction-row items-center text-xs">BUSCAR</div>
         </div>
       </nav>
     </div>

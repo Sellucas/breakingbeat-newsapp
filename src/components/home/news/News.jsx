@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import api from "../../../services/api";
 import Economy from "../economy/Economy";
 import Weather from "../weather/Weather";
+import "../../../index.css"
 
 // URL api'top-headlines?country=pt&apiKey=b50bea4d22e043f7a84c7c1b0af10408'
 
@@ -26,7 +27,7 @@ const News = () => {
 
   return (
     <div className="lg:flex w-fit">
-      <div className="flex justify-center flex-wrap w-4/5">
+      <div className="flex justify-center flex-wrap max-w-[1000px]">
         {news.map((post) => {
           return (
             <div key={post.publishedAt} className="w-72 h-80 mr-[35px]">
@@ -41,9 +42,11 @@ const News = () => {
           );
         })}
       </div>
-      <div className="w-1/5">
-        <Weather/>
-        <Economy />
+      <div className="c-hidden w-parent relative">
+        <div className="w-inherit fixed">
+          <Weather />
+          <Economy />
+        </div>
       </div>
     </div>
   );
